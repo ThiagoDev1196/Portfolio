@@ -39,7 +39,7 @@ return (
         <div className="project-text-container flex flex-col justify-center items-center space-y-4 p-2 md:px-5">
             <h3 className="text-lg font-semibold md:text-2xl">{currentProject.name} </h3>
             <p className="text-sm text-center md:text-start md:h-50 md:flex md:justify-center md:items-center md:text-md lg:text-lg">{currentProject.desc}</p>
-            <a href={currentProject.link} className="bg-white text-black px-4 py-2 text-sm md:text-md lg:text-lg lg:px-6 rounded-lg hover:bg-gray-200">Visit the page</a>
+            <a href={currentProject.link} target="_blank" className="bg-white text-black px-4 py-2 text-sm md:text-md lg:text-lg lg:px-6 rounded-lg hover:bg-gray-200">Visit the page</a>
         </div>
         <div className="project-img-container max-w-120 pt-4 md:min-w-100 md:max-w-160">
             <img className="w-full h-full " src={currentProject.img} alt="project picture preview" />
