@@ -45,7 +45,7 @@ return (
             <img className="w-full h-full " src={currentProject.img} alt="project picture preview" />
         </div>
 
-        <div className="project-button-container space-x-3 mt-auto mb-28 md:hidden">
+        <div className="project-button-container space-x-3 mt-auto mb-36 md:hidden">
             <button onClick={handlePrev} className="bg-white text-sm text-black px-4 py-2 rounded-lg hover:bg-gray-200">Previous</button>
             <button onClick={handleNext} className="bg-white text-sm text-black px-4 py-2 rounded-lg hover:bg-gray-200">Next</button>
         </div>
