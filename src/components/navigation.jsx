@@ -20,11 +20,11 @@ function Header() {
 
         <ul className={`nav__ul ${isOpen ? 'flex-col' : 'hidden'} w-full md:flex md:flex-row md:justify-end p-3 md:text-lg`} id="nav">
 
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu}  className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#">Home</a></li>
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#projects">Projects</a></li>
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#skills">Skills</a></li>
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#about">About me</a></li>
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#contact">Contact me</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu}  className="hover:text-gray-400 transition ease-in lg:px-6 lg:py-2 lg:rounded-3xl" href="#">Home</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="hover:text-gray-400 transition ease-in lg:px-6 lg:py-2 lg:rounded-3xl" href="#projects">Projects</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="hover:text-gray-400 transition ease-in lg:px-6 lg:py-2 lg:rounded-3xl" href="#skills">Skills</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="hover:text-gray-400 transition ease-in lg:px-6 lg:py-2 lg:rounded-3xl" href="#about">About me</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="hover:text-gray-400 transition ease-in lg:px-6 lg:py-2 lg:rounded-3xl" href="#contact">Contact me</a></li>
         </ul>     
     </nav>
 
