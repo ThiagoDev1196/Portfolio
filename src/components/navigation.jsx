@@ -18,11 +18,8 @@ function Header() {
 
 
 
-        <ul className={`nav__ul ${isOpen ? 'flex-col' : 'hidden'} w-full md:flex md:flex-row md:justify-between p-3 md:text-lg`} id="nav">
+        <ul className={`nav__ul ${isOpen ? 'flex-col' : 'hidden'} w-full md:flex md:flex-row md:justify-end p-3 md:text-lg`} id="nav">
 
-          <div className="nav__button  md:mr-auto hidden md:flex flex-row items-center justify-center text-md ">
-            <a href="" className="bg-gray-200/10 px-6 py-2 rounded-xl border-white border-2 cursor-pointer ">Hire me</a>
-          </div>
           <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu}  className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#">Home</a></li>
           <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#projects">Projects</a></li>
           <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#skills">Skills</a></li>
