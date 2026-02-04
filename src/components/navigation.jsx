@@ -24,10 +24,10 @@ function Header() {
             <a href="" className="bg-gray-200/10 px-6 py-2 rounded-xl border-white border-2 cursor-pointer ">Hire me</a>
           </div>
           <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu}  className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#">Home</a></li>
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#">About me</a></li>
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#">Skills</a></li>
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#">Projects</a></li>
-          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#">Contact me</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#projects">Projects</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#skills">Skills</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#about">About me</a></li>
+          <li className="p-6 pl-4 md:p-4 font-semibold"><a onClick={toggleMenu} className="lg:hover:text-white lg:px-6 lg:py-2 lg:rounded-3xl" href="#contact">Contact me</a></li>
         </ul>     
     </nav>
 

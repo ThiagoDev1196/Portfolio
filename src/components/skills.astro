@@ -3,24 +3,31 @@ import { skills } from "../data/skills.js";
 import SkillCard from "./skillCard.astro";
 ---
 
-<h3 class="text-3xl text-white text-center font-bold pb-5 md:pt-10 md:text-4xl lg:text-5xl">Skills</h3>
+<section id="skills" class="max-w-425 m-auto scroll-mt-20">
 
-<div class="skills-container flex flex-col items-center space-y-8 md:p-4">
-  <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Languages</h4>
-  <div class="flex flex-row flex-wrap justify-center gap-4">
-    {skills.languages.map((s) => <SkillCard name={s.name} picture={s.img} />)}
+  <h3 class="text-3xl text-white text-center font-bold pb-5 md:pt-10 md:text-4xl lg:text-5xl">
+    Skills
+  </h3>
+
+  <div class="skills-container flex flex-col items-center space-y-8 md:p-4">
+    <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Languages</h4>
+    <div class="flex flex-row flex-wrap justify-center gap-4">
+      {skills.languages.map((s) => <SkillCard name={s.name} picture={s.img} />)}
+    </div>
+
+    <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Frameworks</h4>
+    <div class="flex flex-row flex-wrap justify-center gap-4">
+      {skills.frameworks.map((s) => <SkillCard name={s.name} picture={s.img} />)}
+    </div>
+
+    <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Tools</h4>
+    <div class="flex flex-row flex-wrap justify-center gap-4">
+      {skills.tools.map((s) => <SkillCard name={s.name} picture={s.img} />)}
+    </div>
   </div>
 
-  <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Frameworks</h4>
-  <div class="flex flex-row flex-wrap justify-center gap-4">
-    {skills.frameworks.map((s) => <SkillCard name={s.name} picture={s.img} />)}
-  </div>
+</section>
 
-  <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Tools</h4>
-  <div class="flex flex-row flex-wrap justify-center gap-4">
-    {skills.tools.map((s) => <SkillCard name={s.name} picture={s.img} />)}
-  </div>
-</div>
 
 <style>
   h4 {

@@ -28,7 +28,7 @@ const currentProject = projects[index];
 
 return (
 
-    <>
+    <section id="projects" class="max-w-425 m-auto scroll-mt-15 md:scroll-mt-26">
 
     <h2 className="text-3xl font-bold py-4 text-white text-center md:text-4xl lg:text-5xl lg:mb-8">Projects</h2>
 
@@ -53,7 +53,7 @@ return (
     <button onClick={handlePrev} className="button-md hidden md:flex text-gray-500 px-6 text-3xl cursor-pointer hover:text-white lg:text-5xl">‹</button>
 
     </div>
-    </>
+    </section>
 )
 
 }

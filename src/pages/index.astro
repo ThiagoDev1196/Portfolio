@@ -10,11 +10,19 @@ import Footer from "../components/footer.astro"
 ---
 
 <MainLayout>
-	<Navigation client:load />
-	<Hero />
-	<Projects client:load />
-	<Skills />
-	<About />
-	<Contact />
+
+	<header>
+	  <Navigation client:load />
+	  <Hero />
+	</header>
+
+	<main>
+	  <Projects client:load />
+	  <Skills />
+	  <About />
+	  <Contact />
+	</main>
+
 	<Footer />
+	
 </MainLayout>

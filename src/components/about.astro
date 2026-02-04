@@ -3,25 +3,28 @@ import { Image } from "astro:assets";
 import aboutpfp from "../assets/about1.jpg";
 ---
 
-<h3 class="text-3xl text-center text-white font-bold pt-20 pb-5 md:text-4xl lg:text-5xl sm:hidden">So, who am I?</h3>
+<section id="about" class="max-w-425 m-auto sm:-scroll-mt-5 lg:scroll-mt-5">
 
-<div class="about-container flex flex-col items-center justify-center text-white p-8 sm:flex-row-reverse sm:pt-20 lg:justify-around">
+  <h3 class="text-3xl text-center text-white font-bold pt-20 pb-5 md:text-4xl lg:text-5xl sm:hidden">So, who am I?</h3>
 
-    <div class="about-img-container flex items-center justify-center sm:w-1/2 sm:max-w-105 md:max-w-100">
-        <Image src={aboutpfp} alt="About me picture" class="rounded-md object-cover w-64 h-64 sm:w-full sm:h-auto" />
-    </div>
+  <div class="about-container flex flex-col items-center justify-center text-white p-8 sm:flex-row-reverse sm:pt-20 lg:justify-around">
 
-    <div class="about-text-container text-center pt-4 sm:p-6 sm:flex-1 sm:pl-8 sm:text-left md:text-lg lg:text-2xl md:space-y-5">
+      <div class="about-img-container flex items-center justify-center sm:w-1/2 sm:max-w-105 md:max-w-100">
+          <Image src={aboutpfp} alt="About me picture" class="rounded-md object-cover w-64 h-64 sm:w-full sm:h-auto" />
+      </div>
 
-        <h3 class="text-3xl text-center text-white font-bold pb-5 md:text-4xl lg:text-5xl hidden sm:flex">So, who am I?</h3>
-        <p>
-            I'm currently studying Systems Engineering at UTN (Universidad Tecnológica Nacional) in Buenos Aires. I hold a B2 English certificate from AACI, having completed 6 years of study.
-            <br><br>
-            I've been designing web pages with passion since I was 14, learning from videos, documentation and practising, always trying to improve. As you could see, I have some projects that I've developed to show what I'm able to do as a freelancer front end developer.
-            <br><br>
-            I really enjoy making web pages, and I hope to create yours!
-        </p>
+      <div class="about-text-container text-center pt-4 sm:p-6 sm:flex-1 sm:pl-8 sm:text-left md:text-lg lg:text-2xl md:space-y-5">
+
+          <h3 class="text-3xl text-center text-white font-bold pb-5 md:text-4xl lg:text-5xl hidden sm:flex">So, who am I?</h3>
+          <p>
+              I'm currently studying Systems Engineering at UTN (Universidad Tecnológica Nacional) in Buenos Aires. I hold a B2 English certificate from AACI, having completed 6 years of study.
+              <br><br>
+              I've been designing web pages with passion since I was 14, learning from videos, documentation and practising, always trying to improve. As you could see, I have some projects that I've developed to show what I'm able to do as a freelancer front end developer.
+              <br><br>
+              I really enjoy making web pages, and I hope to create yours!
+          </p>
         
-    </div>
+       </div>
     
-</div>
+  </div>
+</section>
