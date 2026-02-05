@@ -3,31 +3,58 @@ import { skills } from "../data/skills.js";
 import SkillCard from "./skillCard.astro";
 ---
 
-<section id="skills" class="max-w-425 m-auto scroll-mt-20">
-
-  <h3 class="text-3xl text-white text-center font-bold pb-5 md:pt-10 md:text-4xl lg:text-5xl">
+<section id="skills" class="max-w-6xl m-auto scroll-mt-28 px-4 md:mt-20 lg:mt-30">
+  <h3
+    class="text-3xl text-white text-center font-bold pb-10 md:text-4xl lg:text-5xl"
+  >
     Skills
   </h3>
 
-  <div class="skills-container flex flex-col items-center space-y-8 md:p-4">
-    <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Languages</h4>
-    <div class="flex flex-row flex-wrap justify-center gap-4">
-      {skills.languages.map((s) => <SkillCard name={s.name} picture={s.img} />)}
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
+  >
+    <div class="flex flex-col items-center">
+      <h4
+        class="text-white text-2xl mb-6 border-b border-white/20 pb-2 w-full text-center"
+      >
+        Languages
+      </h4>
+      <div class="flex flex-wrap justify-center gap-4">
+        {
+          skills.languages.map((s) => (
+            <SkillCard name={s.name} picture={s.img} />
+          ))
+        }
+      </div>
     </div>
 
-    <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Frameworks</h4>
-    <div class="flex flex-row flex-wrap justify-center gap-4">
-      {skills.frameworks.map((s) => <SkillCard name={s.name} picture={s.img} />)}
+    <div class="flex flex-col items-center">
+      <h4
+        class="text-white text-2xl mb-6 border-b border-white/20 pb-2 w-full text-center"
+      >
+        Frameworks
+      </h4>
+      <div class="flex flex-wrap justify-center gap-4">
+        {
+          skills.frameworks.map((s) => (
+            <SkillCard name={s.name} picture={s.img} />
+          ))
+        }
+      </div>
     </div>
 
-    <h4 class="text-white text-2xl md:text-3xl lg:text-4xl">Tools</h4>
-    <div class="flex flex-row flex-wrap justify-center gap-4">
-      {skills.tools.map((s) => <SkillCard name={s.name} picture={s.img} />)}
+    <div class="flex flex-col items-center md:col-span-2">
+      <h4
+        class="text-white text-2xl mb-6 border-b border-white/20 pb-2 w-full text-center"
+      >
+        Tools
+      </h4>
+      <div class="flex flex-wrap justify-center gap-4">
+        {skills.tools.map((s) => <SkillCard name={s.name} picture={s.img} />)}
+      </div>
     </div>
   </div>
-
 </section>
-
 
 <style>
   h4 {

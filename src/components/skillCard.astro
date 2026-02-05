@@ -3,14 +3,14 @@ const { name, picture } = Astro.props;
 ---
 
 <div
-  class="skill-container border-3 border-white w-28 h-28 rounded-md text-white text-center flex flex-col items-center justify-center space-y-1 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
+  class="skill-container border-3 border-white w-26 h-26 rounded-md text-white text-center flex flex-col items-center justify-center space-y-1 sm:w-34 sm:h-34 lg:w-36 lg:h-36"
 >
-  <div class="skill-text-container">
-    <span class="text-md md:text-lg">{name}</span>
+  <div class="skill-text-container gap-2">
+    <span class="text-md">{name}</span>
   </div>
 
   <div class="skill-img mx-auto flex shrink-0">
-    <img class="object-contain w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20" src={picture} alt={`${name} logo`} />
+    <img class="object-contain w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-16 lg:h-16" src={picture} alt={`${name} logo`} />
   </div>
 </div>
 
