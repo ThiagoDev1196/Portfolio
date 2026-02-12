@@ -16,5 +16,6 @@ export const skills ={
         {name: "GitHub", img: `${base}skills-pictures/github.svg`},
         {name: "VS Code", img: `${base}skills-pictures/vsc.svg`},
         {name: "Figma", img: `${base}skills-pictures/figma.svg`},
+        {name: "Vite", img: `${base}skills-pictures/vite.svg`},
     ]
 }
