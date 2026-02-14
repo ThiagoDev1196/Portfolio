@@ -3,9 +3,9 @@ import { skills } from "../data/skills.js";
 import SkillCard from "./skillCard.astro";
 ---
 
-<section id="skills" class="max-w-6xl m-auto scroll-mt-28 px-4 md:mt-20 lg:mt-30">
+<section id="skills" class="max-w-425 m-auto scroll-mt-20 md:scroll-mt-4 lg:scroll-mt-0 px-4 md:py-20 lg:py-30 bg-white/95">
   <h3
-    class="text-3xl text-white text-center font-bold pb-10 md:text-4xl lg:text-5xl"
+    class="text-3xl text-black text-center font-bold pb-10 md:text-4xl lg:text-5xl"
   >
     Skills
   </h3>
@@ -15,7 +15,7 @@ import SkillCard from "./skillCard.astro";
   >
     <div class="flex flex-col items-center">
       <h4
-        class="text-white text-2xl mb-6 border-b border-white/20 pb-2 w-full text-center"
+        class="text-black text-2xl mb-6 border-b border-black pb-2 w-full text-center"
       >
         Languages
       </h4>
@@ -30,7 +30,7 @@ import SkillCard from "./skillCard.astro";
 
     <div class="flex flex-col items-center">
       <h4
-        class="text-white text-2xl mb-6 border-b border-white/20 pb-2 w-full text-center"
+        class="text-black text-2xl mb-6 border-b border-black pb-2 w-full text-center"
       >
         Frameworks
       </h4>
@@ -45,7 +45,7 @@ import SkillCard from "./skillCard.astro";
 
     <div class="flex flex-col items-center md:col-span-2">
       <h4
-        class="text-white text-2xl mb-6 border-b border-white/20 pb-2 w-full text-center"
+        class="text-black text-2xl mb-6 border-b border-black pb-2 w-full text-center"
       >
         Tools
       </h4>
@@ -55,9 +55,3 @@ import SkillCard from "./skillCard.astro";
     </div>
   </div>
 </section>
-
-<style>
-  h4 {
-    color: white;
-  }
-</style>

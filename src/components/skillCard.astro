@@ -3,7 +3,7 @@ const { name, picture } = Astro.props;
 ---
 
 <div
-  class="skill-container border-3 border-white w-26 h-26 rounded-md text-white text-center flex flex-col items-center justify-center space-y-1 sm:w-34 sm:h-34 lg:w-36 lg:h-36"
+  class="skill-container border-3 border-black w-26 h-26 rounded-md text-black text-center flex flex-col items-center justify-center space-y-1 sm:w-34 sm:h-34 lg:w-36 lg:h-36"
 >
   <div class="skill-text-container gap-2">
     <span class="text-md">{name}</span>
@@ -14,9 +14,4 @@ const { name, picture } = Astro.props;
   </div>
 </div>
 
-<style>
-  img {
-    filter: invert(1) brightness(2);
-    opacity: 0.9;
-  }
-</style>
+
