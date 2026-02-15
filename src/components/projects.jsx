@@ -28,11 +28,13 @@ const currentProject = projects[index];
 
 return (
 
-    <section id="projects" className="max-w-425 m-auto scroll-mt-15 py-10 md:scroll-mt-20 bg-white/95">
+    <section id="projects" className="w-full scroll-mt-15 py-10 md:scroll-mt-20 bg-white/95">
+
+        <div className="projects-container max-w-425 mx-auto">
 
     <h2 className="text-3xl font-bold py-4 text-black text-center md:text-4xl lg:text-5xl lg:mb-8">Projects</h2>
 
-    <div className="projects-container flex flex-col text-black justify-center items-center p-2 h-160 md:flex-row-reverse md:h-auto md:p-4 lg:h-full">
+    <div className="projects-container-p flex flex-col text-black justify-center items-center p-2 h-160 md:flex-row-reverse md:h-auto md:p-4 lg:h-full">
 
     <button onClick={handleNext} className="button-md hidden md:flex text-gray-800 px-6 text-3xl cursor-pointer hover:text-gray-500 lg:text-5xl"> › </button>
 
@@ -53,6 +55,10 @@ return (
     <button onClick={handlePrev} className="button-md hidden md:flex text-gray-800 px-6 text-3xl cursor-pointer hover:text-gray-500 lg:text-5xl">‹</button>
 
     </div>
+
+
+        </div>
+
     </section>
 )
 

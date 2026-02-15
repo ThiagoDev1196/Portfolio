@@ -3,9 +3,9 @@ import { Image } from "astro:assets";
 import contact from "../assets/contact-img.svg";
 ---
 
-<section id="contact" class="max-w-425 m-auto py-10 -scroll-mt-2 md:scroll-mt-14 lg:scroll-mt-12 bg-stone-50">
+<section id="contact" class="w-full m-auto py-10 -scroll-mt-2 md:scroll-mt-14 lg:scroll-mt-12 bg-stone-100">
   <div
-    class="contact-container flex flex-col text-white bg-purple-600 rounded-md shadow-md  shadow-black justify-center items-center p-6 m-8 md:p-10 lg:p-20"
+    class="contact-container max-w-425 mx-auto flex flex-col text-black bg-white rounded-md shadow-md  shadow-gray-300 justify-center items-center p-6 m-8 md:p-10 lg:p-20"
   >
     <div class="contact-img-container">
       <Image class="contact-img w-30" src={contact} alt="Chat logo" />
@@ -14,7 +14,7 @@ import contact from "../assets/contact-img.svg";
     <div
       class="contact-text-container flex flex-col items-center text-center gap-6 mt-4 sm:text-lg md:text-xl lg:text-2x xl:gap-8"
     >
-      <h3 class="text-3xl font-bold md:text-4xl lg:text-5xl">
+      <h3 class="text-3xl font-bold md:text-4xl lg:text-5xl text-purple-600">
         Have any project in mind?
       </h3>
       <p class="">
@@ -24,15 +24,11 @@ import contact from "../assets/contact-img.svg";
       <p>Quick answer | No strings attached</p>
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLScEKNIKGSakZFNyATlYOUuhkeFnddQnfpiO-zkykfo1DWC45w/viewform?usp=sharing&ouid=101589160111500884461" target="_blank"
-        class="bg-white text-black px-4 py-2 rounded-md cursor-pointer hover:bg-gray-300 transition-all duration-200"
+        class="bg-purple-600 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-purple-800 transition-all duration-200"
         >Contact me</a
       >
     </div>
   </div>
 </section>
 
-<style>
-  .contact-img {
-    filter: invert(1) brightness(2);
-  }
-</style>
+
