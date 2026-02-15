@@ -14,6 +14,7 @@ export const skills ={
     tools: [
         {name: "Git", img: `${base}skills-pictures/git.svg`},
         {name: "GitHub", img: `${base}skills-pictures/github.svg`},
+        {name: "Copilot Pro", img: `${base}skills-pictures/copilot.svg`},
         {name: "VS Code", img: `${base}skills-pictures/vsc.svg`},
         {name: "Figma", img: `${base}skills-pictures/figma.svg`},
         {name: "Vite", img: `${base}skills-pictures/vite.svg`},
